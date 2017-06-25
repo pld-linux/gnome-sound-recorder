@@ -1,0 +1,45 @@
+--- gnome-sound-recorder-3.24.0.1/configure.ac.orig	2017-03-22 05:05:59.000000000 +0100
++++ gnome-sound-recorder-3.24.0.1/configure.ac	2017-06-25 15:11:08.621640859 +0200
+@@ -51,12 +51,11 @@
+ 	else
+ 		AC_MSG_RESULT([no])
+-		AC_MSG_ERROR([
+-			Cannot find required GStreamer-1.0 plugin '$1'.
++		AC_MSG_WARN([
++			Cannot find required GStreamer-1.0 plugin '$base_element'.
+ 			It should be part of gst-plugins-base. Please install it.
+ 		])
+ 
+ 	fi
+-	shift;
+ done
+ 
+ # Check for elements from gst-plugins-good
+@@ -69,11 +68,10 @@
+ 	else
+ 		AC_MSG_RESULT([no])
+-		AC_MSG_ERROR([
+-			Cannot find required GStreamer-1.0 plugin '$1'.
++		AC_MSG_WARN([
++			Cannot find required GStreamer-1.0 plugin '$good_element'.
+ 			It should be part of gst-plugins-good. Please install it.
+ 		])
+ 	fi
+-	shift;
+ done
+ 
+ # Do a diff check for pulseaudio since we've run into problems on deb systems
+@@ -101,12 +99,11 @@
+ 	else
+ 		AC_MSG_RESULT([no])
+ 		AC_MSG_WARN([
+-			Cannot find required GStreamer-1.0 plugin '$1'.
++			Cannot find required GStreamer-1.0 plugin '$bad_element'.
+ 			It should be part of gst-plugins-bad. Please install it.
+ 		])
+ 
+ 	fi
+-	shift;
+ done
+ 
+ 
