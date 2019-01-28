@@ -1,12 +1,12 @@
 Summary:	GNOME Sound Recorder - a simple, modern sound recorder
 Summary(pl.UTF-8):	GNOME Sound Recorder - prosty, nowoczesny program do nagrywania dźwięku
 Name:		gnome-sound-recorder
-Version:	3.24.0.1
+Version:	3.28.2
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Sound
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-sound-recorder/3.24/%{name}-%{version}.tar.xz
-# Source0-md5:	e70e4b32b0f6bd5e798aff442c2f9880
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-sound-recorder/3.28/%{name}-%{version}.tar.xz
+# Source0-md5:	b9d14e08fd93cfca5bbcdc1b16da10b2
 Patch0:		%{name}-ac.patch
 URL:		https://wiki.gnome.org/Design/Apps/SoundRecorder
 BuildRequires:	autoconf >= 2.50
@@ -87,12 +87,12 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc AUTHORS NEWS README
 %attr(755,root,root) %{_bindir}/gnome-sound-recorder
-%{_datadir}/appdata/org.gnome.SoundRecorder.appdata.xml
+%{_datadir}/metainfo/org.gnome.SoundRecorder.appdata.xml
 %{_datadir}/glib-2.0/schemas/org.gnome.gnome-sound-recorder.gschema.xml
 %dir %{_datadir}/gnome-sound-recorder
 %attr(755,root,root) %{_datadir}/gnome-sound-recorder/org.gnome.SoundRecorder
 %{_datadir}/gnome-sound-recorder/org.gnome.SoundRecorder.src.gresource
 %{_datadir}/gnome-sound-recorder/application.css
 %{_desktopdir}/org.gnome.SoundRecorder.desktop
-%{_iconsdir}/hicolor/*x*/apps/gnome-sound-recorder.png
-%{_iconsdir}/hicolor/symbolic/apps/gnome-sound-recorder-symbolic.svg
+%{_iconsdir}/hicolor/*x*/apps/org.gnome.SoundRecorder.png
+%{_iconsdir}/hicolor/symbolic/apps/org.gnome.SoundRecorder-symbolic.svg
