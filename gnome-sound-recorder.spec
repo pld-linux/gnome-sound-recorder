@@ -1,12 +1,12 @@
 Summary:	GNOME Sound Recorder - a simple, modern sound recorder
 Summary(pl.UTF-8):	GNOME Sound Recorder - prosty, nowoczesny program do nagrywania dźwięku
 Name:		gnome-sound-recorder
-Version:	3.38.1
+Version:	40.0
 Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Sound
-Source0:	https://download.gnome.org/sources/gnome-sound-recorder/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	57cabf0cf3a36d987a8af68a9e291de6
+Source0:	https://download.gnome.org/sources/gnome-sound-recorder/40/%{name}-%{version}.tar.xz
+# Source0-md5:	238c952ac95cf6019c1ef135b9a98211
 URL:		https://wiki.gnome.org/Apps/SoundRecorder
 BuildRequires:	gettext-tools
 BuildRequires:	gjs-devel >= 1.54.0
@@ -15,7 +15,7 @@ BuildRequires:	gobject-introspection-devel >= 1.32
 # pkgconfig(gstreamer-player-1.0)
 BuildRequires:	gstreamer-plugins-bad-devel >= 1.12
 BuildRequires:	gtk+3-devel >= 3.13.2
-BuildRequires:	libhandy1-devel >= 0.80.0
+BuildRequires:	libhandy1-devel >= 1.1.90
 BuildRequires:	meson >= 0.50.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
@@ -41,7 +41,7 @@ Requires:	gstreamer-plugins-base >= 1.12
 Requires:	gstreamer-pulseaudio >= 1.12
 Requires:	gtk+3 >= 3.13.2
 Requires:	hicolor-icon-theme
-Requires:	libhandy1 >= 0.80.0
+Requires:	libhandy1 >= 1.1.90
 # audio/x-flac
 Suggests:	gstreamer-flac >= 1.12
 # audio/mpeg,mpegversion=(int)1,layer=(int)3
