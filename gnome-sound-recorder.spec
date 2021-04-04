@@ -2,7 +2,7 @@ Summary:	GNOME Sound Recorder - a simple, modern sound recorder
 Summary(pl.UTF-8):	GNOME Sound Recorder - prosty, nowoczesny program do nagrywania dźwięku
 Name:		gnome-sound-recorder
 Version:	40.0
-Release:	1
+Release:	2
 License:	GPL v2+
 Group:		X11/Applications/Sound
 Source0:	https://download.gnome.org/sources/gnome-sound-recorder/40/%{name}-%{version}.tar.xz
@@ -52,6 +52,7 @@ Suggests:	gstreamer-opus >= 1.12
 Suggests:	gstreamer-plugins-good >= 1.12
 # application/ogg, application/ogg;audio/ogg;video/ogg, audio/x-vorbis
 Suggests:	gstreamer-vorbis >= 1.12
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
