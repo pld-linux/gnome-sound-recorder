@@ -1,21 +1,24 @@
+# TODO: use gtk4-update-icon-theme
 Summary:	GNOME Sound Recorder - a simple, modern sound recorder
 Summary(pl.UTF-8):	GNOME Sound Recorder - prosty, nowoczesny program do nagrywania dźwięku
 Name:		gnome-sound-recorder
-Version:	40.0
-Release:	2
+Version:	42.0
+Release:	1
 License:	GPL v2+
 Group:		X11/Applications/Sound
-Source0:	https://download.gnome.org/sources/gnome-sound-recorder/40/%{name}-%{version}.tar.xz
-# Source0-md5:	238c952ac95cf6019c1ef135b9a98211
+Source0:	https://download.gnome.org/sources/gnome-sound-recorder/42/%{name}-%{version}.tar.xz
+# Source0-md5:	f7f244a7587025b17695ad60c00662e8
 URL:		https://wiki.gnome.org/Apps/SoundRecorder
 BuildRequires:	gettext-tools
 BuildRequires:	gjs-devel >= 1.54.0
 BuildRequires:	glib2-devel >= 1:2.46
 BuildRequires:	gobject-introspection-devel >= 1.32
+BuildRequires:	gstreamer-devel >= 1.0
 # pkgconfig(gstreamer-player-1.0)
 BuildRequires:	gstreamer-plugins-bad-devel >= 1.12
-BuildRequires:	gtk+3-devel >= 3.13.2
-BuildRequires:	libhandy1-devel >= 1.1.90
+BuildRequires:	gstreamer-plugins-base-devel >= 1.0
+BuildRequires:	gtk4-devel >= 4.4.0
+BuildRequires:	libadwaita-devel >= 1.0.0
 BuildRequires:	meson >= 0.50.0
 BuildRequires:	ninja >= 1.5
 BuildRequires:	pkgconfig
@@ -39,9 +42,9 @@ Requires:	gstreamer-plugins-bad >= 1.12
 Requires:	gstreamer-plugins-base >= 1.12
 # elements: pulsesink pulsesrc
 Requires:	gstreamer-pulseaudio >= 1.12
-Requires:	gtk+3 >= 3.13.2
+Requires:	gtk4 >= 4.4.0
 Requires:	hicolor-icon-theme
-Requires:	libhandy1 >= 1.1.90
+Requires:	libadwaita >= 1.0.0
 # audio/x-flac
 Suggests:	gstreamer-flac >= 1.12
 # audio/mpeg,mpegversion=(int)1,layer=(int)3
